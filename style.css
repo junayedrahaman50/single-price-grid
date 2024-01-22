@@ -1,0 +1,149 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+/* Flex Container */
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #e5eff5;
+  position: relative;
+}
+
+/* Grid Container */
+.container {
+  max-width: 750px;
+  display: grid;
+  /* margin: 50px auto; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.2fr;
+  /* box-shadow: 2px 2px 10px rgba(71, 126, 125, 0.411); */
+  box-shadow: 2px 2px 10px #477e7d69;
+  border-radius: 5px;
+}
+
+/* Item A */
+.item-a {
+  grid-column: 1/-1;
+  padding: 25px 30px;
+  line-height: 1.7rem;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+.item-a h2 {
+  margin-bottom: 20px;
+  color: #2ab2af;
+}
+.item-a h3 {
+  margin-bottom: 10px;
+  color: #c0df34;
+}
+.item-a p {
+  color: #a3b8c8;
+}
+
+/* Item B */
+.item-b {
+  padding: 25px 30px;
+  background-color: #21bab8;
+  color: #fff;
+  border-radius: 0 0 0 5px;
+}
+.item-b h2 {
+  margin-bottom: 20px;
+}
+.item-b button {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: transparent;
+  background-color: #c0df34;
+  font-weight: 700;
+  letter-spacing: 1px;
+  /* box-shadow: 3px 3px 10px rgba(71, 126, 125, 0.7); */
+  box-shadow: 3px 3px 10px #477e7db3;
+  cursor: pointer;
+}
+.item-b button:link {
+}
+.item-b button:visited {
+}
+.item-b button:hover {
+}
+.item-b button:active {
+}
+.item-b .price {
+  display: flex;
+  margin-bottom: 10px;
+}
+.item-b .price p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.item-b .price span {
+  padding: 10px;
+  color: #b6d0e2;
+}
+
+/* Item C */
+.item-c {
+  padding: 25px 30px;
+  background-color: #1bc0bdb2;
+  border-radius: 0 0 5px 0;
+}
+.item-c ul {
+  list-style: none;
+}
+.item-c ul li {
+  margin-bottom: 5px;
+  color: #e1e9ef;
+  font-size: 0.9rem;
+}
+.item-c h2 {
+  margin-bottom: 20px;
+}
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 8%;
+  color: #333;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 800px) {
+  body {
+    display: block;
+    height: 100%;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 15px;
+  }
+
+  .item-b {
+    border-radius: 0;
+  }
+  .item-c {
+    border-radius: 0 0 5px 5px;
+  }
+  .attribution {
+    position: static;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
