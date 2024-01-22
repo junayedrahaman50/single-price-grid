@@ -21,9 +21,7 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop-view](screenshot/screenshot-desktop.png)
-This is the desktop version of the component.
-![Mobile-view](screenshot/screenshot-mobile.png)
-This is the mobile version of the component.
+This is the desktop version of the component. I didn't upload the mobile version cause it's too long.
 
 ### Links
 
